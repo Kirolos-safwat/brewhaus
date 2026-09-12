@@ -1,0 +1,126 @@
+:root {
+  /* --- Brand Color Palette (brewhaus.webflow.io) --- */
+  --color-forest-green: #1d4e1a; /* Primary text, borders, dark accents/backgrounds */
+  --color-cream: #ffecb8; /* Warm soft cream, light text on green, button borders */
+  --color-cream-light: #fcf3d9; /* Page background, soft section accents */
+--light-green: #2d5a27;
+  /* Semantic Color Roles */
+  --color-black: #111111;
+  --color-primary: var(--color-forest-green);
+  --color-secondary: var(--color-cream);
+  --color-bg: var(--color-cream-light);
+  --color-bg-dark: var(--color-forest-green);
+  --color-surface: #ffffff;
+  --color-text: var(--color-forest-green);
+  --color-text-on-dark: var(--color-cream);
+  --color-text-muted: rgba(29, 78, 26, 0.75);
+  --color-border: var(--color-forest-green);
+  --color-border-cream: var(--color-cream);
+  --color-scrolled-nav: rgba(23, 62, 21, 0.95);
+    /* --- Brand Color Palette (brewhaus.webflow.io) --- */
+  --color-forest-green: #1d4e1a; /* Primary text, borders, dark accents/backgrounds */
+  --color-cream: #ffecb8; /* Warm soft cream, light text on green, button borders */
+  --color-cream-light: #fcf3d9; /* Page background, soft section accents */
+
+  /* Semantic Color Roles */
+  --color-black: #111111;
+  --color-primary: var(--color-forest-green);
+  --color-secondary: var(--color-cream);
+  --color-bg: var(--color-cream-light);
+  --color-bg-dark: var(--color-forest-green);
+  --color-surface: #ffffff;
+  --color-text: var(--color-forest-green);
+  --color-text-on-dark: var(--color-cream);
+  --color-text-muted: rgba(29, 78, 26, 0.75);
+  --color-border: var(--color-forest-green);
+  --color-border-cream: var(--color-cream);
+  --color-scrolled-nav: rgba(23, 62, 21, 0.95);
+}
+/* --------------------------------------------------------------------------
+   2. MODERN CSS RESET
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px; /* Root 16px base */
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-size: clamp(48px, 7vw, 96px);
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.04px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02em;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Cabin Condensed", sans-serif;
+  transition:
+    opacity 150ms ease,
+    color 150ms ease;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.screen-gutter {
+  /* Dynamic base padding with safe area fallback for notches/bezels */
+  padding-inline: max(clamp(16px, 4vw, 32px), env(safe-area-inset-left, 0px))
+    max(clamp(16px, 4vw, 32px), env(safe-area-inset-right, 0px));
+  box-sizing: border-box;
+}

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Brewhaus – website template</title>
+    <!-- Favicon -->
+    <link
+      href="./assets/images/shortcut icon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main&varibles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-link--logo" aria-label="Brewhaus Logo">
+              <img src="./assets/icons/coffee-Symbol.svg" alt="Coffee Symbol" />
+              <img src="./assets/icons/coffee-Symbol.svg" alt="Coffee Symbol" />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li  class="icon" onclick="openNavMenu()" aria-label="Menu Toggle">
+              <i id="burgerMenu" class="fa-solid fa-bars"></i>
+            </li>
+          </ul>
+        </nav>
+        <div id="phoneNav" class="phoneNav">
+          <ul>
+            <li class="nav-item-p">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item-p">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-item-p">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-p">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="hero">
+      <div class="container">
+        <div class="container hero-container">
+          <div class="text">
+            <h1 class="hero-h1">
+              Life Begins <br />
+              After Coffee
+            </h1>
+
+            <p>Because great coffee is the start of something even greater.</p>
+          </div>
+
+          <div class="buttons">
+            <a href="menu.html" class="btn btn1">Explore Menu</a>
+            <a href="locations.html" class="btn btn2">Our Locations</a>
+          </div>
+
+          <!-- Coffee Cups 3D Overlay Composition -->
+          <div class="coffee">
+            <div class="heroImage">
+              <div class="image fImage">
+                <img
+                  src="./assets/images/BlackCoffeeCup.avif"
+                  alt="Black Coffee Cup"
+                />
+              </div>
+              <div class="image mainImageHero">
+                <img
+                  src="./assets/images/EspressoCup.avif"
+                  alt="Espresso Cup"
+                />
+              </div>
+              <div class="image lImage">
+                <img
+                  src="./assets/images/ColdBrewCup.avif"
+                  alt="Cold Brew Cup"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="store">
+      <div class="ticker">
+        <div class="ticker-wrapper">
+          <div class="ticker-line">
+            <div class="regular-l">Great Coffee</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c4a_Smiley.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Fast Service</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdc4ce089f4d12b11a_Bolt.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Cozy Space</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd4c35f0d7add92618_Instagram.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Handcrafted Drinks</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c47_Sweat%20Waterdrop.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Local Roasts</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd229c48735660b163_Smiley%20Love.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Global Flavor</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdf56cf0e0f9cc9eb2_Element.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Friendly Baristas</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd2d76ac1afebf0eb4_Crown.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+          </div>
+          <div class="ticker-line">
+            <div class="regular-l">Great Coffee</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c4a_Smiley.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Fast Service</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdc4ce089f4d12b11a_Bolt.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Cozy Space</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd4c35f0d7add92618_Instagram.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Handcrafted Drinks</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c47_Sweat%20Waterdrop.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Local Roasts</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd229c48735660b163_Smiley%20Love.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Global Flavor</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdf56cf0e0f9cc9eb2_Element.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Friendly Baristas</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd2d76ac1afebf0eb4_Crown.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+          </div>
+          <div class="ticker-line">
+            <div class="regular-l">Great Coffee</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c4a_Smiley.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Fast Service</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdc4ce089f4d12b11a_Bolt.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Cozy Space</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd4c35f0d7add92618_Instagram.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Handcrafted Drinks</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c47_Sweat%20Waterdrop.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Local Roasts</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd229c48735660b163_Smiley%20Love.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Global Flavor</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdf56cf0e0f9cc9eb2_Element.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Friendly Baristas</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd2d76ac1afebf0eb4_Crown.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+          </div>
+          <div class="ticker-line">
+            <div class="regular-l">Great Coffee</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c4a_Smiley.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Fast Service</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdc4ce089f4d12b11a_Bolt.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Cozy Space</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd4c35f0d7add92618_Instagram.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Handcrafted Drinks</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd7beece9d81e20c47_Sweat%20Waterdrop.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Local Roasts</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd229c48735660b163_Smiley%20Love.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Global Flavor</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bdf56cf0e0f9cc9eb2_Element.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+            <div class="regular-l">Friendly Baristas</div>
+            <img
+              src="https://cdn.prod.website-files.com/67fcb54501dc826cf4f8bfe9/67fce0bd2d76ac1afebf0eb4_Crown.svg"
+              loading="lazy"
+              alt=""
+              class="ticker-illustration"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/8dfe694427.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

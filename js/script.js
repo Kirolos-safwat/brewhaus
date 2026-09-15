@@ -30,13 +30,18 @@ function openNavMenu() {
     burgerMenu.classList.add("fa-bars");
   }
 
-
-
   if (burgerMenu.classList.contains("fa-bars")) {
-    document.getElementById("phoneNav").style.display = "none";
+    document.getElementById("phoneNav").classList.remove("phoneNavEnable");
+    navbar.classList.remove("scrolled");
   } else {
-    document.getElementById("phoneNav").style.display = "block";
-  }
-}
-  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+    document.getElementById("phoneNav").classList.add("phoneNavEnable");
 
+    navbar.classList.add("scrolled");
+  }
+  const menuBtn = document.querySelector(".icon");
+
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-active");
+  });
+}
+const isMobile = window.matchMedia("(max-width: 767px)").matches;
